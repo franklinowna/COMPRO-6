@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace TEMPERATURE
+{
+    public class COMPRO_6 
+    {
+      public static void Main(string[] arg)
+      {
+           int temp;
+
+            Console.Write("Enter Temperature:");
+            temp = int.Parse(Console.ReadLine());
+
+            if (temp < 0)
+            {
+                Console.Write("Ice");
+            }
+            else if (temp <= 100)
+            {
+                Console.Write("Water");
+            }
+            else
+            {
+                Console.Write("Stream");              
+            }
+            Console.ReadKey();
+ 
+       }
+    }
+}
